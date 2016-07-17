@@ -1,11 +1,19 @@
 {
-  "name": "recursive-keys-test",
-  "version": "1.0.0",
-  "description": "Testing recursive-keys module",
+  "name": "recursively-keys",
+  "version": "1.0.2",
+  "description": "Recursively-keys module for obtaining the keys in a Object recursively",
   "main": "index.js",
   "scripts": {
     "test": "make test"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/AkashBabu/recursively-keys.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/AkashBabu/recursively-keys/issues"
+  },
+  "main": "index.js",
   "keywords": [
     "recursive-keys",
     "Object",
@@ -23,5 +31,9 @@
   },
   "licenses":{
     "type" : "MIT"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "nodeunit": "~0.9.0"
   }
 }
