@@ -4,7 +4,7 @@
 
 
 
-Recursive-Keys
+Recursively-Keys
 
 =====================================================
 
@@ -13,12 +13,12 @@ A simple library that helps you to get all the keys in an Object even DEEPLY.
 
 ## Installation
 
-	npm install recursive-keys --save
+	npm install recursively-keys --save
 
 
 ## Usage
 	
-	var getKeys = require('recursive-keys');
+	var getKeys = require('recursively-keys');
 
 	var options = {recursive : true};
 

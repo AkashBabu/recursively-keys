@@ -1,6 +1,6 @@
 
 
-var getKeys = require('/home/aakash/Documents/Nodejs/lib/recursive-keys/index.js')
+var getKeys = require('../index.js')
 var assert = require('chai').assert;
 
 var options = {recursive : true};
