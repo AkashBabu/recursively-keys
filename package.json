@@ -1,0 +1,27 @@
+{
+  "name": "recursive-keys-test",
+  "version": "1.0.0",
+  "description": "Testing recursive-keys module",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "keywords": [
+    "recursive-keys",
+    "Object",
+    "keys",
+    "recursive",
+    "object keys",
+    "deep",
+    "deep keys"
+  ],
+  "author": "Akash Babu",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.5.3"
+  },
+  "licenses":{
+    "type" : "MIT"
+  }
+}
