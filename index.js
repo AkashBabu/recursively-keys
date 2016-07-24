@@ -1,4 +1,12 @@
 
+
+
+
+
+
+
+
+
 var getKeys = function(object, options, cb){
 	var keys, first = true;
 	if(first){
@@ -18,35 +26,30 @@ var getKeys = function(object, options, cb){
 		}
 	}
 	
-	if(object instanceof Object){
-		if(!object.length){
-			if(options.recursive){
-				for(var key in object){
-					keys.push(key);
-					if(object[key] instanceof Object){
-						getKeys(object[key], options, function(err, obtainedKeys){
-							if(!err && (obtainedKeys.length > 0)){
-								keys = keys.concat(obtainedKeys);
-							}
+	if(object.constructor == Object){
+		if(options.recursive){
+			for(var key in object){
+				keys.push(key);
+				if(object[key] instanceof Object){
+					getKeys(object[key], options, function(err, obtainedKeys){
+						if(!err && (obtainedKeys.length > 0)){
+							keys = keys.concat(obtainedKeys);
+						}
 
-						})
-					}
+					})
 				}
-				first = true;
-				cb(null, keys);
-				return;
-			}else{
-				cb(null, Object.keys(object));
-				return;
 			}
+			first = true;
 			cb(null, keys);
 			return;
 		}else{
-			cb('Array input is not allowed', null);
+			cb(null, Object.keys(object));
 			return;
 		}
+		cb(null, keys);
+		return;
 	}else{
-		cb('Object is null', keys);
+		cb('Only Objects are allowed', keys);
 		return;
 	}
 }
