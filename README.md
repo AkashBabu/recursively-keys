@@ -30,23 +30,24 @@ A simple library that helps you to get all the keys in an Object even DEEPLY.
 			x : 1,
 			a : 2,
 			v : [3,2,1,5]
-		}
+		},
+		e : [ 1, 'a', {f : 1}, [ {g : 1} ]]
 	}
 
-	getKeys(object, options, function(err, keys){
-		console.log('Keys : ' + keys);
-	});
+	var keys = getKeys(object, options);
 
-	// This will result in -- Keys : a,b,c,d,x,a,v
+	// This will result in -- Keys : a,b,c,d,x,a,v,e,f,g
 
+	var keys = getKeys(object);
 
-	getKeys(object, [options], callback)
+	// This will result in -- Keys : a,b,c,d,e
+
+	getKeys(object, [options])
 
 	object - A JSON object
 	options - A JSON object which can include
-		recursive - (boolean) if true, it will return all the keys deeply. If false, it will only return the first 	            level of keys.
+		recursive - (boolean) if true, it will return all the keys deeply. If false, it will only return the first level of keys.
 		(Other options will be included in further versions)
-	callback - (err, keys) if err, then it will return the reason, else keys will be returned.
 
 
 ## Tests
