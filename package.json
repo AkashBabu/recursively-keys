@@ -1,6 +1,6 @@
 {
   "name": "recursively-keys",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Recursively-keys module for obtaining the keys in a Object recursively",
   "main": "index.js",
   "scripts": {
