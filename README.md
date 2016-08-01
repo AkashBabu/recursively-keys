@@ -63,4 +63,6 @@ A simple library that helps you to get all the keys in an Object even DEEPLY.
 
 ## Release History
 
-	* 0.1.0 Initial Release
+	* 1.0.0 Initial Release
+
+	* 2.1.0 Api changes and code efficiency improved
